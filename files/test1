@@ -1,0 +1,275 @@
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+To usefully close the domain gap between YouTube gameplay footage and our environment observations,
+our learnt embedding space should exhibit two desirable properties: (1) one-to-one alignment
+capacity and (2) meaningful abstraction. We consider each of these properties in turn.
+First, one-to-one alignment is desirable for reliably mapping observations between different sequences.
+We evaluate this property using the cycle-consistency measure introduced in Section 3.3. The features
+from earlier layers in  (see Figure 4) are centered and l2-normalized before computing cycleconsistency.
+Specifically, we consider both (a) the 2-way cycle-consistency, P, between the test
+video and the first training video, and (b) the 3-way cycle-consistency, P3
+, between the test video and
+the first two training videos. These results are presented in Figure 4, comparing the cycle-consistencies
+of our TDC, CMC and combined methods to a naive l2-distance in pixel space, single-view timecontrastive
+networks (TCN) [29] and L3-Net [3]. Note that we implemented single-view TCN and
+L3-Net in our framework and tuned the hyperparameters to achieve the best P3
+ cycle-consistency. As
+expected, pixel loss performs worst in the presence of sequence-to-sequence domain gaps. Our TDC
+and CMC methods alone yield improved performance compared to TCN and L3-Net (particularly at
+deeper levels of abstraction), and combining both methods provides the best results overall.
+Next, Figure 5 shows the t-SNE projection of observation trajectories taken by different human
+demonstrators to traverse the first room of MONTEZUMA’S REVENGE. It is again evident that a
+pixel-based loss entirely fails to align the sequences. The embeddings learnt using purely cross-modal
+alignment (i.e. L3-Net and CMC) perform better but still yield particularly scattered and disjoint
+trajectories, which is an undesirable property likely due to the sparsity of salient audio signals. TDC
+and our combined TDC+CMC methods provide the more globally consistent trajectories, and are less
+likely to produce false-positives with respect to the distance metric described in Section 4.
+Finally, a useful embedding should provide a useful abstraction that encodes meaningful, high-
+Figure 7: Learning curves of our combined TDC+CMC algorithm with (purple) and without (yellow)
+environment reward, versus imitation from pixel-space features (blue) and IMPALA without demonstrations
+(green). The red line represents the maximum reward achieved using previously published
+methods, and the brown line denotes the score obtained by an average human player.
+demonstrates the spatial activation of neurons in the final convolutional layer of the embedding
+network , using the visualization method proposed in [40]. It is compelling that the top activations
+are centered on features including the player and enemy positions in addition to the inventory state,
+which is informative of the next location that needs to be explored (e.g. if we have collected the key
+required to open a door). Important objects such as the key are emphasized more in the cross-modal
+and combined embeddings, likely due to the unique sounds that are played when collected (see figure
+6(d) and (e)). Notably absent are activations associated with distractors such as the moving sand
+animation, or video-specific artifacts indicative of the domain gap we wished to close.
+6.2 Solving hard exploration games with one-shot imitation
+Using the method described in Section 4, we train an IMPALA agent to play the hard exploration
+Atari games MONTEZUMA’S REVENGE, PITFALL! and PRIVATE EYE using a learned auxiliary
+reward to guide exploration. We reemphasize that for each game the embedding network, , was
+trained using just three YouTube videos, and that a fourth, held-aside video was embedded to generate
+a sequence of exploration checkpoints. Videos of our agent playing these games can be found here2.
+Figure 7 presents our learning curves for each hard exploration Atari game. Without imitation reward,
+the pure RL agent is unable to collect any of the sparse rewards in MONTEZUMA’S REVENGE
+and PITFALL!, and only reaches the first two rewards in PRIVATE EYE (consistent with previous
+studies using DQN variants [19, 22]). Using pixel-space features, the guided agent is able to obtain
+17k points in PRIVATE EYE but still fails to make progress in the other games. Replacing a pixel
+embedding with our combined TDC+CMC embedding convincingly yields the best results, even if
+the agent is presented only with our TDC+CMC imitation reward (i.e. no environment reward).
+Finally, in Table 1 we compare our best policies for each game to the best previously published
+results; Rainbow [19] and ApeX DQN [22] without demonstrations, and DQfD [20] using expert
+demonstrations. Unlike DQfD our demonstrations are unaligned YouTube footage without access
+to action or reward trajectories. Our results are calculated using the standard approach of averaging
+over 200 episodes initialized using a random 1-to-30 no-op actions. Importantly, our approach is
+the first to convincingly exceed human-level performance on all three games – even in the absence
+of an environment reward signal. We are the first to solve the entire first level of MONTEZUMA’S
+REVENGE and PRIVATE EYE, and substantially outperform state-of-the-art on PITFALL!.
+Figure 7: Learning curves of our combined TDC+CMC algorithm with (purple) and without (yellow)
+environment reward, versus imitation from pixel-space features (blue) and IMPALA without demonstrations
+(green). The red line represents the maximum reward achieved using previously published
+methods, and the brown line denotes the score obtained by an average human player.
+demonstrates the spatial activation of neurons in the final convolutional layer of the embedding
+network , using the visualization method proposed in [40]. It is compelling that the top activations
+are centered on features including the player and enemy positions in addition to the inventory state,
+which is informative of the next location that needs to be explored (e.g. if we have collected the key
+required to open a door). Important objects such as the key are emphasized more in the cross-modal
+and combined embeddings, likely due to the unique sounds that are played when collected (see figure
+6(d) and (e)). Notably absent are activations associated with distractors such as the moving sand
+animation, or video-specific artifacts indicative of the domain gap we wished to close.
+6.2 Solving hard exploration games with one-shot imitation
+Using the method described in Section 4, we train an IMPALA agent to play the hard exploration
+Atari games MONTEZUMA’S REVENGE, PITFALL! and PRIVATE EYE using a learned auxiliary
+reward to guide exploration. We reemphasize that for each game the embedding network, , was
+trained using just three YouTube videos, and that a fourth, held-aside video was embedded to generate
+a sequence of exploration checkpoints. Videos of our agent playing these games can be found here2.
+Figure 7 presents our learning curves for each hard exploration Atari game. Without imitation reward,
+the pure RL agent is unable to collect any of the sparse rewards in MONTEZUMA’S REVENGE
+and PITFALL!, and only reaches the first two rewards in PRIVATE EYE (consistent with previous
+studies using DQN variants [19, 22]). Using pixel-space features, the guided agent is able to obtain
+17k points in PRIVATE EYE but still fails to make progress in the other games. Replacing a pixel
+embedding with our combined TDC+CMC embedding convincingly yields the best results, even if
+the agent is presented only with our TDC+CMC imitation reward (i.e. no environment reward).
+Finally, in Table 1 we compare our best policies for each game to the best previously published
+results; Rainbow [19] and ApeX DQN [22] without demonstrations, and DQfD [20] using expert
+demonstrations. Unlike DQfD our demonstrations are unaligned YouTube footage without access
+to action or reward trajectories. Our results are calculated using the standard approach of averaging
+over 200 episodes initialized using a random 1-to-30 no-op actions. Importantly, our approach is
+the first to convincingly exceed human-level performance on all three games – even in the absence
+of an environment reward signal. We are the first to solve the entire first level of MONTEZUMA’S
+REVENGE and PRIVATE EYE, and substantially outperform state-of-the-art on PITFALL!.
+Figure 7: Learning curves of our combined TDC+CMC algorithm with (purple) and without (yellow)
+environment reward, versus imitation from pixel-space features (blue) and IMPALA without demonstrations
+(green). The red line represents the maximum reward achieved using previously published
+methods, and the brown line denotes the score obtained by an average human player.
+demonstrates the spatial activation of neurons in the final convolutional layer of the embedding
+network , using the visualization method proposed in [40]. It is compelling that the top activations
+are centered on features including the player and enemy positions in addition to the inventory state,
+which is informative of the next location that needs to be explored (e.g. if we have collected the key
+required to open a door). Important objects such as the key are emphasized more in the cross-modal
+and combined embeddings, likely due to the unique sounds that are played when collected (see figure
+6(d) and (e)). Notably absent are activations associated with distractors such as the moving sand
+animation, or video-specific artifacts indicative of the domain gap we wished to close.
+6.2 Solving hard exploration games with one-shot imitation
+Using the method described in Section 4, we train an IMPALA agent to play the hard exploration
+Atari games MONTEZUMA’S REVENGE, PITFALL! and PRIVATE EYE using a learned auxiliary
+reward to guide exploration. We reemphasize that for each game the embedding network, , was
+trained using just three YouTube videos, and that a fourth, held-aside video was embedded to generate
+a sequence of exploration checkpoints. Videos of our agent playing these games can be found here2.
+Figure 7 presents our learning curves for each hard exploration Atari game. Without imitation reward,
+the pure RL agent is unable to collect any of the sparse rewards in MONTEZUMA’S REVENGE
+and PITFALL!, and only reaches the first two rewards in PRIVATE EYE (consistent with previous
+studies using DQN variants [19, 22]). Using pixel-space features, the guided agent is able to obtain
+17k points in PRIVATE EYE but still fails to make progress in the other games. Replacing a pixel
+embedding with our combined TDC+CMC embedding convincingly yields the best results, even if
+the agent is presented only with our TDC+CMC imitation reward (i.e. no environment reward).
+Finally, in Table 1 we compare our best policies for each game to the best previously published
+results; Rainbow [19] and ApeX DQN [22] without demonstrations, and DQfD [20] using expert
+demonstrations. Unlike DQfD our demonstrations are unaligned YouTube footage without access
+to action or reward trajectories. Our results are calculated using the standard approach of averaging
+over 200 episodes initialized using a random 1-to-30 no-op actions. Importantly, our approach is
+the first to convincingly exceed human-level performance on all three games – even in the absence
+of an environment reward signal. We are the first to solve the entire first level of MONTEZUMA’S
+REVENGE and PRIVATE EYE, and substantially outperform state-of-the-art on PITFALL!.
+

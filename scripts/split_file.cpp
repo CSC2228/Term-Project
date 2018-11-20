@@ -66,6 +66,7 @@ void split_file(char *fullFilePath, char *chunkName, unsigned long chunkSize) {
 using namespace std;
 int main(int argc, char** argv) 
 {
+	/*
 	std::string filename = argv[1];
 	std::string input_path = argv[2];
 	std::string output_path = argv[3];
@@ -75,5 +76,12 @@ int main(int argc, char** argv)
 	char *c_output_path = const_cast<char*>(output_path.append(filename).c_str());
 
 	split_file(c_input_path, c_output_path, chunk_size);
+	*/
+
+	char *c_input_path = argv[1];
+	char *c_output_path = argv[2];
+	unsigned long chunk_size = atol(argv[3]);
+
+        split_file(c_input_path, c_output_path, chunk_size);
 	return 0;
 }
