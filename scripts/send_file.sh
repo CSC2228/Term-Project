@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Run from an edge server
+
 filename=$1
 owner=$2
 group=$3
@@ -26,8 +28,9 @@ file_size=$(stat -c %s $en_input_path)
 
 transfer_file() {
 	tf_filename=$1
-	tf_hostname=$2
-	rsync -avq --remove-source-files "${tf_filename}" ${tf_hostname}:/var/lib/csc2228/files/
+	final_filename=$2
+	tf_hostname=$3
+	rsync -avq --remove-source-files "${tf_filename}" ${tf_hostname}:/var/lib/csc2228/files/${final_filename}
 	return 0
 }
 
@@ -52,7 +55,7 @@ do
 #	echo "${servers[$s_index]}"
 
 	#Transfer file to storage server
-	transfer_file "${sp_output_path}.${chunk}" "${server_hosts[$s_index]}"
+	transfer_file "${sp_output_path}.${chunk}" "${file_id}.${chunk}" "${server_hosts[$s_index]}"
 	#Add file chunk location to database
 	$rpsql_command "insert into file_chunks values ($file_id, $chunk, '${server_ids[$s_index]}')"
 	s_index=$(($((s_index+1)) % $num_servers))
