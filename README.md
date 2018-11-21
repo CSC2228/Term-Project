@@ -10,3 +10,11 @@ CSC2228 Final Project
 #### Join File: ####
 * Input Paramaeters (as arguments): <filename>, <input_path_of_file_chunks>, <output_path_of_file>
 * Output: "Success" or "Error" message
+
+#### Encrypt (under EncryptDecrypt folder): ####
+* Input Parameters (as arguments): <input_path_of_original_file>, <output_path_of_encrypted_file>
+* Output: Encrypted file or Error message
+
+#### Decrypt (under EncryptDecrypt folder): ####
+* Input Parameters (as arguments): <input_path_of_encrypted_filen>, <output_path_of_decrypted_file>
+* Output: Decrypted file or Error message
